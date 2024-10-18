@@ -9,7 +9,6 @@ terraform {
   }
 }
 
-# Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
 }
@@ -18,4 +17,7 @@ provider "azurerm" {
 resource "azurerm_resource_group" "example" {
   name     = "rg-indi"
   location = "West Europe"
-}
+  tags = {
+    owner = "inderjit.singh@redbull.com"
+  }
+}#
