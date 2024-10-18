@@ -18,4 +18,7 @@ provider "azurerm" {
 resource "azurerm_resource_group" "example" {
   name     = "rg-FRMA"
   location = "West Europe"
+tags = {
+    owner = "FRMA"
+  }
 }
