@@ -49,7 +49,7 @@ resource "azurerm_resource_group" "kacper-rg-PL" {
   }
 }
 
-module "kacper-vm" {
+module "kacper-vm-PL" {
   source                        = "./modules/vm"
   nic_name                      = "kacper-nic"
   location                      = azurerm_resource_group.kacper-rg-PL.location
@@ -57,7 +57,7 @@ module "kacper-vm" {
   //subnet_id                   = azurerm_subnet.kacper-subnet.id
   # when using vnet module:
   subnet_id                     = module.kacper-vnet-PL.subnet_id
-  vm_name                       = "kacperVM"
+  vm_name                       = "kacperVM-PL"
   vm_size                       = "Standard_DS1_v2"
   os_disk_name                  = "example-os-disk"
   image_publisher               = "Canonical"
