@@ -1,7 +1,7 @@
 # Create a resource group
 resource "azurerm_resource_group" "hans-rg" {
   name     = "hans-rg"
-  location = "westeurope"
+  location = "West Europe"
   tags = {
     owner = "Franz.Martinek@redbull.com"
   }
