@@ -41,7 +41,7 @@ module "hans-vnet" {
 //--------------------
 
 # Create a resource group
-resource "azurerm_resource_group" "hans-rg-us-us" {
+resource "azurerm_resource_group" "hans-rg-us" {
   name     = "hans-rg-us"
   location = "East US"
   tags = {
